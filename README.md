@@ -56,15 +56,6 @@ Constitution_ChatBot/
 
 ---
 
----
-
-## Demo
-
-Example interaction with the chatbot:
-
-<img width="955" height="561" alt="image" src="https://github.com/user-attachments/assets/4793f24d-c430-4e99-bdc0-1e6d396fe865" />
-
----
 
 ## Installation
 
@@ -116,6 +107,16 @@ python ingest.py
 ```
 python chat.py
 ```
+
+---
+
+---
+
+## Demo
+
+Example interaction with the chatbot:
+
+<img width="955" height="561" alt="image" src="https://github.com/user-attachments/assets/4793f24d-c430-4e99-bdc0-1e6d396fe865" />
 
 ---
 
