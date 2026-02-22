@@ -1,8 +1,13 @@
+Your README formatting looks broken because the **Project Structure section was not in a proper code block**. GitHub requires triple backticks for correct alignment.
+
+Here is the corrected, clean, professional README.md. Copy this exactly.
+
+---
 
 ```markdown
 # Constitution Chatbot (RAG-based AI Assistant)
 
-An AI-powered chatbot that answers questions about the Constitution of India using Retrieval-Augmented Generation (RAG). This system retrieves relevant sections from the Constitution PDF and generates accurate answers using a Large Language Model.
+An AI-powered chatbot that answers questions about the Constitution of India using Retrieval-Augmented Generation (RAG). It retrieves relevant constitutional articles from a PDF and generates accurate answers using a Large Language Model.
 
 ---
 
@@ -14,7 +19,7 @@ An AI-powered chatbot that answers questions about the Constitution of India usi
 - Uses HuggingFace embeddings for semantic understanding
 - Stores document vectors in ChromaDB
 - Displays source page numbers for verification
-- Fully local vector database (no cloud dependency for storage)
+- Fully local vector database
 
 ---
 
@@ -25,7 +30,7 @@ An AI-powered chatbot that answers questions about the Constitution of India usi
 - Groq API (LLM inference)
 - HuggingFace Embeddings
 - ChromaDB (Vector Database)
-- PyPDFLoader (Document loading)
+- PyPDFLoader
 
 ---
 
@@ -35,7 +40,7 @@ An AI-powered chatbot that answers questions about the Constitution of India usi
 
 Constitution_ChatBot/
 │
-├── chat.py              # Main chatbot interface
+├── chat.py              # Chatbot interface
 ├── ingest.py            # Document ingestion and vector storage
 ├── models.py            # Model and embedding configuration
 ├── data/
@@ -50,33 +55,32 @@ Constitution_ChatBot/
 
 ## How It Works
 
-1. The Constitution PDF is loaded and split into chunks
-2. Each chunk is converted into embeddings using HuggingFace
-3. Embeddings are stored in ChromaDB
-4. When a user asks a question:
-   - Relevant chunks are retrieved
-   - Context is sent to Groq LLM
-   - Answer is generated based on retrieved content
+1. Loads Constitution PDF
+2. Splits text into chunks
+3. Converts chunks into embeddings
+4. Stores embeddings in ChromaDB
+5. Retrieves relevant context for user query
+6. Generates answer using Groq LLM
 
 ---
 
 ## Installation
 
-### 1. Clone the repository
+### Clone repository
 
 ```bash
 git clone https://github.com/KoletiSankeerthana/Constitution_Chatbot.git
 cd Constitution_Chatbot
 ````
 
-### 2. Create virtual environment
+### Create virtual environment
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### Install dependencies
 
 ```bash
 pip install langchain langchain-community langchain-groq chromadb python-dotenv sentence-transformers pypdf
@@ -86,24 +90,21 @@ pip install langchain langchain-community langchain-groq chromadb python-dotenv 
 
 ## Setup API Key
 
-Create a `.env` file in the project root:
+Create `.env` file:
 
 ```
-GROQ_API_KEY=your_groq_api_key_here
+GROQ_API_KEY=your_api_key_here
 ```
 
-Get your API key from:
-[https://console.groq.com/](https://console.groq.com/)
+Get API key from: [https://console.groq.com/](https://console.groq.com/)
 
 ---
 
-## Run Document Ingestion
+## Run Ingestion
 
 ```bash
 python ingest.py
 ```
-
-This creates the vector database.
 
 ---
 
@@ -118,7 +119,6 @@ Example:
 ```
 User: What is Article 21?
 
-Bot: Article 21 guarantees protection of life and personal liberty...
+Bot: Article 21 guarantees protection of life and personal liberty.
 
----
-
+```
