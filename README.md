@@ -119,5 +119,3 @@ python chat.py
 
 ---
 
-
-Your GitHub README will now display perfectly aligned with a proper Project Structure tree.
