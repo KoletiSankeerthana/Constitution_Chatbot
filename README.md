@@ -1,4 +1,3 @@
----
 
 # Constitution Chatbot (RAG-based AI Assistant)
 
@@ -63,8 +62,7 @@ Constitution_ChatBot/
 
 Example interaction with the chatbot:
 
-![Uploading image.png…]()
-
+<img width="955" height="561" alt="image" src="https://github.com/user-attachments/assets/4793f24d-c430-4e99-bdc0-1e6d396fe865" />
 
 ---
 
