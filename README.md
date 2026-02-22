@@ -1,10 +1,5 @@
-Your README formatting looks broken because the **Project Structure section was not in a proper code block**. GitHub requires triple backticks for correct alignment.
-
-Here is the corrected, clean, professional README.md. Copy this exactly.
-
 ---
 
-```markdown
 # Constitution Chatbot (RAG-based AI Assistant)
 
 An AI-powered chatbot that answers questions about the Constitution of India using Retrieval-Augmented Generation (RAG). It retrieves relevant constitutional articles from a PDF and generates accurate answers using a Large Language Model.
@@ -13,31 +8,30 @@ An AI-powered chatbot that answers questions about the Constitution of India usi
 
 ## Features
 
-- Ask questions about the Indian Constitution in natural language
-- Retrieves relevant constitutional articles using semantic search
-- Generates accurate answers using Groq LLM (Llama 3.3)
-- Uses HuggingFace embeddings for semantic understanding
-- Stores document vectors in ChromaDB
-- Displays source page numbers for verification
-- Fully local vector database
+* Ask questions about the Indian Constitution in natural language
+* Retrieves relevant constitutional articles using semantic search
+* Generates accurate answers using Groq LLM (Llama 3.3)
+* Uses HuggingFace embeddings for semantic understanding
+* Stores document vectors in ChromaDB
+* Displays source page numbers for verification
+* Fully local vector database
 
 ---
 
 ## Tech Stack
 
-- Python
-- LangChain
-- Groq API (LLM inference)
-- HuggingFace Embeddings
-- ChromaDB (Vector Database)
-- PyPDFLoader
+* Python
+* LangChain
+* Groq API (LLM inference)
+* HuggingFace Embeddings
+* ChromaDB (Vector Database)
+* PyPDFLoader
 
 ---
 
 ## Project Structure
 
 ```
-
 Constitution_ChatBot/
 │
 ├── chat.py              # Chatbot interface
@@ -48,8 +42,7 @@ Constitution_ChatBot/
 ├── db/                  # Vector database (auto-generated)
 ├── .gitignore
 └── README.md
-
-````
+```
 
 ---
 
@@ -64,25 +57,36 @@ Constitution_ChatBot/
 
 ---
 
+---
+
+## Demo
+
+Example interaction with the chatbot:
+
+![Uploading image.png…]()
+
+
+---
+
 ## Installation
 
-### Clone repository
+Clone repository:
 
-```bash
+```
 git clone https://github.com/KoletiSankeerthana/Constitution_Chatbot.git
 cd Constitution_Chatbot
-````
+```
 
-### Create virtual environment
+Create virtual environment:
 
-```bash
+```
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### Install dependencies
+Install dependencies:
 
-```bash
+```
 pip install langchain langchain-community langchain-groq chromadb python-dotenv sentence-transformers pypdf
 ```
 
@@ -90,19 +94,20 @@ pip install langchain langchain-community langchain-groq chromadb python-dotenv 
 
 ## Setup API Key
 
-Create `.env` file:
+Create `.env` file in the project root:
 
 ```
 GROQ_API_KEY=your_api_key_here
 ```
 
-Get API key from: [https://console.groq.com/](https://console.groq.com/)
+Get your API key from:
+[https://console.groq.com/](https://console.groq.com/)
 
 ---
 
 ## Run Ingestion
 
-```bash
+```
 python ingest.py
 ```
 
@@ -110,15 +115,11 @@ python ingest.py
 
 ## Run Chatbot
 
-```bash
+```
 python chat.py
 ```
 
-Example:
+---
 
-```
-User: What is Article 21?
 
-Bot: Article 21 guarantees protection of life and personal liberty.
-
-```
+Your GitHub README will now display perfectly aligned with a proper Project Structure tree.
